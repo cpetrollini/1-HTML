@@ -10,22 +10,95 @@
 
 <body>
     <h1>Formulario</h1>
-    <form action="">
-        <p> <label for="usrnm">Ingrese nombre de usuario:</label>
-            <input type="text" placeholder="usuario" id="usrnm">
+    <form action="/form">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">Ejemplos</th>
+                </tr>
+                <tr>
+                    <th>Button</tH>
+                    <tH>Input</th>
+                </tr>
+            </thead>
+            <TBody>
+                <tr>
+                    <td>
+                        <button type="button">Button</button>
+                        <!-- el type button es para que se cmporte como un boton normal, sin enviar el formulario -->
+                    </td>
+                    <td>
+                        <input type="button" value="Input">
+                        <!-- el input tambien se puede usar como un boton -->
+                    </td>
+                </tr>
+            </TBody>
+        </table>
+
+
+        <p>
+            <label for="usrnm">Ingrese nombre de usuario:</label>
+            <input type="text" placeholder="usuario" id="usrnm" name="user">
         </p>
         <p>
             <label for="psswrd">Ingrese contrase&ntildea:</label>
-            <input type="password" name="" id="psswrd" placeholder="contrase&#241a">
+            <input type="password" name="pass" id="psswrd" placeholder="contrase&#241a">
         </p>
-        <p> <label for="clr">Ingrese un color:</label>
-            <input type="color" name="" id="clr">
+        <p>
+            <label for="clr">Ingrese un color:</label>
+            <input type="color" name="col" id="clr" name="col">
         </p>
         <p>
             <!-- Se puede anidar el inpit dentro de la etiqueta para -->
             <label for="nmbr">Ingrese un n&uacutemero</label>
-            <input type="number" name="" id="nmbr">
+            <input type="number" name="num" id="nmbr" name="num">
         </p>
+        <button type="Submit">Submit</button>
+        <!-- el type button es para que se cmporte como un boton normal, sin enviar el formulario -->
+        <input type="submit" value="Input">
+        <!-- el input tambien se puede usar como un boton -->
+    </form>
+    <!-- Si un <button> esta dentro del formulario, su accion por sefecto es enviar el formulario -->
+
+    <hr>
+
+    <h1>B&uacute;quedas</h1>
+    <form action="https://www.reddit.com/search/">
+        <h3>Buscar en Reddit</h3>
+        <input type="text" name="q" id="reddit">
+        <button>Buscar</button>
+    </form>
+    <form action="https://www.youtube.com/results">
+        <h3>Buscar en YouTube</h3>
+        <input type="text" name="search_query" id="yt">
+        <button>Buscar</button>
+    </form>
+    <hr>
+    <h2>M&aacute;s Inputs</h2>
+    <form action="/birds">
+        <input type="checkbox" name="adhiere" id="adh">
+        <label for="adh">Adhiero a todo</label>
+        <!-- name = lo que aparece en el url; for id para conectar un label a un input
+        value = el valor que se envia al sv, es a lo que equivale el name -->
+        <p>
+            <label for="xs">XS</label>
+            <input type="radio" name="talle" id="xs" value="xs">
+            <label for="s">S</label>
+            <input type="radio" name="talle" id="s" value="s">
+            <label for="m">M</label>
+            <input type="radio" name="talle" id="m" value="m">
+            <label for="l">L</label>
+            <input type="radio" name="talle" id="l" value="l">
+        </p>
+        <p>
+            <label for="meal">Seleccione un men&uacute;</label>
+            <select name="menu" id="meal">
+                <option value="carne">carne</option>
+                <option value="pescado">pescado</option>
+                <option value="vegetariano" selected>vegetariano</option>
+            </select>
+        </p>
+        <button>Submit</button>
     </form>
 </body>
 
