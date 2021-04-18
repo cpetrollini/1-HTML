@@ -38,7 +38,7 @@
 
         <p>
             <label for="usrnm">Ingrese nombre de usuario:</label>
-            <input type="text" placeholder="usuario" id="usrnm" name="user">
+            <input type="text" placeholder="usuario" id="usrnm" name="user" required minlength="3" maxlength="9">
         </p>
         <p>
             <label for="psswrd">Ingrese contrase&ntildea:</label>
@@ -51,7 +51,7 @@
         <p>
             <!-- Se puede anidar el inpit dentro de la etiqueta para -->
             <label for="nmbr">Ingrese un n&uacutemero</label>
-            <input type="number" name="num" id="nmbr" name="num">
+            <input type="number" name="num" id="nmbr" name="num" min="1">
         </p>
         <button type="Submit">Submit</button>
         <!-- el type button es para que se cmporte como un boton normal, sin enviar el formulario -->
@@ -98,6 +98,16 @@
                 <option value="vegetariano" selected>vegetariano</option>
             </select>
         </p>
+        <p>
+            <label for="queso">¿Cu&aacute;nto queso?</label>
+            <input type="range" id="queso" min="1" max="30" name="cantidadqueso">
+        </p>
+        <p>
+            <label for="comentario">Por favor, d&eacute;jenos su comentario</label>
+            <textarea name="Comentario" id="comentario" cols="20" rows="1"
+                placeholder="D&eacute;jenos su comentario"></textarea>
+        </p>
+
         <button>Submit</button>
     </form>
 </body>
