@@ -1,0 +1,15 @@
+h1{
+    /* selector{
+        poperty: value; */
+    color: #4b0082;
+    background-color: rgb(255, 239, 213);
+}
+
+button{
+    color: hsl(0, 100%, 25%);
+    background-color: palegoldenrod;
+}
+
+p{
+    color:mediumaquamarine;
+}
