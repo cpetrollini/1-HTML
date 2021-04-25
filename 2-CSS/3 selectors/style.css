@@ -10,10 +10,13 @@ body{
 
 h1,h2{
     /* la coma es como Y */
-    letter-spacing: 2;
+    letter-spacing: .2rem;
     font-family: monospace;
 }
 
+body h1{
+    letter-spacing: normal;
+}
 span{
     color: slategray;
 }
@@ -34,9 +37,48 @@ span{
 .post a{
     color: rgb(79, 177, 216);
     background-color: none;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 footer a{
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
+}
+
+h2 + button{
+    font-size: smaller;
+}
+
+footer > a{
+    /* descenciente directo */
+    color:rgb(118, 216, 79);
+}
+
+input[type="password"]{
+    color: rosybrown;
+    /* selector por tipo */
+}
+/* pesudo classes */
+.post button:hover{
+    background-color: whitesmoke;
+    color: steelblue;
+}
+
+.post button:active{
+    background-color: rgb(80, 80, 80);
+}
+
+.post a:hover{
+    text-decoration: underline;
+}
+
+/* pseudo elements */
+
+h2::first-letter{
+    font-size: larger;
+}
+
+::selection{
+    background-color: black;
 }
